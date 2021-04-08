@@ -1,0 +1,32 @@
+{
+  "name": "template-back-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node-dev --no-notify src/app.js",
+    "migrate": "node src/database/migrate.js",
+    "seed": "node src/database/seeders/seeder.js",
+    "keys": "node src/config/generateRSAKeys.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ejcm/template-back-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ejcm/template-back-node/issues"
+  },
+  "homepage": "https://gitlab.com/ejcm/template-back-node#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "faker-br": "^0.4.1",
+    "multer": "^1.4.2",
+    "sequelize": "^6.6.2",
+    "sqlite3": "^5.0.2"
+  }
+}
