@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "f6fa1e2c-f092-4270-ad6b-8f1701d192c6",
+		"name": "Aula Routes-Controllers-Validation Exercicio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Cellphone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "manufacturer",
+							"value": "Nokia",
+							"type": "text"
+						},
+						{
+							"key": "number",
+							"value": "11111111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3333/cellphones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"cellphones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show 1 Cellphone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/cellphones/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"cellphones",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cellphone",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/cellphones/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"cellphones",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Cellphones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/cellphones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"cellphones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cellphone",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "number",
+							"value": "12323232323",
+							"type": "text"
+						},
+						{
+							"key": "manufacturer",
+							"value": "nokia",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3333/cellphones/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"cellphones",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Acquire Cellphone",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/acquireCellphone/1/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"acquireCellphone",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Throw Away Cellphone",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/throwAwayCellphone/1/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"throwAwayCellphone",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
